@@ -1,0 +1,23 @@
+<h2>Add a Place</h2>
+
+<form action="/process-place" method="POST">
+  <label>
+    Name:
+    <input type="text" name="placeName" placeholder="My Favorite Restaurant" />
+  </label>
+  <br />
+
+  <label>
+    Location:
+    <input type="text" class="location-input" name="locationName"
+        placeholder="McDonalds" />
+  </label>
+  <br />
+
+  <!-- Hidden inputs for each information from Google you want to save -->
+  <input type="hidden" class="lat-input" name="googleLat" />
+  <input type="hidden" class="long-input" name="googleLong" />
+  <input type="hidden" class="place-id-input" name="googlePlaceId" />
+
+  <button>Save This Place</button>
+</form>
